@@ -1,0 +1,88 @@
+.filterButton {
+    font-size: 16px;
+    size: 30px;
+    background-color: #457b55; 
+    border: none;
+    font-weight: bolder;
+    color:  white; /* Colors Subject to change */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:9px;
+    padding-bottom:6px;
+    float: right;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    z-index:1;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    margin-right: 40px;
+}
+
+.filterButton:hover{
+    background-color: #34252f;
+}
+
+.filterMenu {
+    position: absolute;
+    right: 0;
+    float: right;
+    z-index: 1;
+}
+
+
+.filterCategories {
+    margin-top: 40px;
+    padding: 15px 12px;
+    background-color: #457b55; 
+    min-width: 120px;
+    border: 5px solid #34252f;
+    border-radius: 15px;
+}
+
+.applyFilters {
+    margin: auto;
+    background-color: #34252f;
+    color: white;  
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    display:block;
+    transition-duration: 0.2s;
+    font-size: large;
+}
+
+.applyFilters:hover {
+    color: white;
+    background-color: #4d4048;
+}
+
+.filterCategories select{
+    min-width: 200px;
+    transition-duration: 0.2s;
+    height: 25px;
+}
+
+.filterCategories select:hover{
+    background-color: lightgrey;
+}
+
+.filterCategoryHeader {
+    color: white;
+}
+
+.filterMenuIcon {
+    width: 25px;
+    height: 25px;
+    display: inline;
+    vertical-align: middle;
+}
+
+/*Mobile Formatting*/
+@media (max-width: 1080px) {
+    .filterButton {
+        margin-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

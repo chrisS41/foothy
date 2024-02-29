@@ -1,0 +1,77 @@
+#prep-time-amount, #cook-time-amount {
+  display: flex;
+}
+
+#prep-time-amt-container, 
+#cook-time-amt-container, 
+#servings-amount,
+.ingredient-quantity
+{
+  flex: 1;
+  padding-right: 10px;
+}
+
+#spacer {
+  flex: 2;
+}
+
+#measurement-input-container {
+  margin: auto;
+  padding-top: 10px;
+}
+
+#prep-time-unit-container, #cook-time-unit-container {
+  flex: 2;
+}
+
+
+#prep-time-unit-container,
+#cook-time-unit-container {
+  display: flex;
+}
+
+.delete-icon {
+  margin: auto;
+  padding-top: 20px;
+}
+
+.ingredient-unit {
+  flex: 2;
+  margin-right: 10px;
+}
+
+.ingredient-name {
+  flex: 4;
+  margin-right: 10px;
+}
+
+.recipe-step {
+  display: flex;
+  width: 100%;
+}
+
+.image-upload-container {
+  margin: 20px 0px 0px 10px;
+  display: flex;
+}
+
+.add-image-button {
+  border: none;
+  background: none;
+  color: #095C3C;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  #prep-time-unit-container, #cook-time-unit-container  {
+    flex: 1;
+  }
+
+  #prep-time-amount, #cook-time-amount {
+    padding: 0px;
+  }
+  
+  .recipe-time {
+    flex-direction: column;
+  }
+}

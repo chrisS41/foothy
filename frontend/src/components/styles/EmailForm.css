@@ -1,0 +1,12 @@
+.email-form {
+  margin: 0 auto;
+  max-width: 500px;
+  font-size: 10pt;
+}
+
+.confirmation-message {
+  color: #108d6e;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 20px;
+}

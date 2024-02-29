@@ -1,0 +1,198 @@
+.header {
+    width: 65%;
+    margin: auto;
+}
+
+.TitleBox {
+    display: flex; 
+}
+
+.LikeFix {
+    margin-top: 15px; 
+    padding-top: 2px;
+}
+
+.recipeHeaderTitle {
+    float: left;
+    width: fit-content;
+    margin-bottom: 3px;
+    font-size: x-large;
+    color: #34252f;
+    font-weight: bold;
+}
+
+.source {
+    font-size: medium;
+    color: #3d573a;
+    transition-duration: 0.2s;
+    width: 25%;
+}
+#sweetLoading {
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+  
+  }
+
+.healthRating {
+    float: right;
+}
+
+.source:hover {
+    color: #86cd60;
+}
+
+.headerImage {
+    width:95%;
+    border-radius: 5px;
+}
+
+.ingredientsList {
+    display: block;
+}
+
+.ingredientsHeader {
+    font-size: large;
+    color: #34252f;
+    margin: auto;
+}
+
+.separationBar{
+    min-width: 103%;
+    background-color: #457b55;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 4px;
+}
+
+.pictureBlock {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+}
+
+.cookTimeHeader{
+    display: inline;
+    float:left;
+    color: #34252f;
+    margin-top: 5px;
+}
+
+.servingsHeader{
+    display: inline;
+    float: right;
+    color: #34252f;
+    margin-right: 65px;
+    margin-top: 5px;
+}
+
+.ingredientsBlock{
+    display: inline-block;
+    width: 40%;
+}
+
+.ingredientListItem {
+    font-size: x-large;
+    padding: 10px;
+}
+
+.stepsHeader{
+    margin: auto;
+    text-align:center;
+    color: #34252f;
+}
+
+/*This section makes it so that each of the step numbers are large and bold.*/
+ol {
+    margin: 0 0 1.5em;
+    padding: 0;
+    counter-reset: item;
+  }
+  
+  ol > li {
+    margin: 0;
+    padding: 0 0 0 2em;
+    text-indent: -2em;
+    list-style-type: none;
+    counter-increment: item;
+  }
+  
+  ol > li:before {
+    display: inline-block;
+    width: 1em;
+    font-size: x-large;
+    padding-right: 0.5em;
+    font-weight: bold;
+    text-align: right;
+    content: counter(item) ".";
+  }
+  /***************************************************************************/
+
+  .individualStep {
+      margin: 25px;
+      font-size: large;
+  }
+
+  /* --- styling for share button section --- */
+  .social-share-container {
+    display: flex;
+  }
+
+  .social-share-container, .social-share-label {
+      margin: auto 0px;
+      flex: none;
+  }
+
+  .share-button-container {
+      margin-left: 10px;
+  }
+
+  .report-container {
+      display: flex;
+      flex: 1;
+      margin-left: 10px;
+  }
+
+  .report-link {
+      color: #3d863a;
+      background: transparent;
+      border: none;
+      transition: all 0.2s ease-in-out;
+  }
+
+  .report-link:hover {
+    color: #3d573a;
+  }
+
+/*Formatting on Mobile devices*/
+@media (max-width: 1080px){
+
+    .header{
+        width: 85%;
+    }
+
+    .ingredientsBlock {
+        display: inline-flexbox;
+        width: 90%;
+    }
+
+    .pictureBlock {
+        display: inline-flexbox;
+        width: 95%;
+    }
+
+    .healthRating {
+        float: left;
+        width: 100%;
+    }
+
+    .cookTimeHeader {
+        font-size: medium;
+    }
+
+    .servingsHeader {
+        margin-right: 20px;
+        font-size: medium;
+    }
+}
+

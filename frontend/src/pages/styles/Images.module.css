@@ -1,0 +1,28 @@
+.bodyBlock {
+    width:35em;
+    border:1px solid #000;
+    border-radius:5px;
+    overflow:hidden;
+    margin-left:calc((100vw - 35em) / 2);
+    margin-top:10px;
+}
+
+.fileUpload {
+    margin-top:10px;
+    margin-bottom:8px;
+    margin-left:10px
+}
+
+.displayImages {
+    width:95%;
+    height:10em;
+    background-color:#ebf0f4;
+    border:0.5px solid #d1d5d9;
+    margin-left:2.5%;
+    margin-bottom:10px;
+    overflow:hidden;
+}
+
+.button {
+    display:none;
+}

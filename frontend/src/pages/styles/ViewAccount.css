@@ -1,0 +1,35 @@
+.createdList{
+    clear: both;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.createdRecipesTitle{
+    float: right;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.profilePage{
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: 100;
+    background-color: white;
+}
+
+@media (max-width: 768px){
+    .createdRecipesTitle{
+        font-size: 13px;
+        position: relative;
+        top: 3vw;
+    }
+}
+
+@media (max-width: 500px){
+    .createdList{
+        position: relative;
+        bottom: 10px;
+    }
+}

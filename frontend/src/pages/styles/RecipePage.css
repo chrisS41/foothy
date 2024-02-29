@@ -1,0 +1,24 @@
+.recipePage {
+    padding: 2rem;
+}
+
+/*Formatting for the results on the page.*/
+.resultRows {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 75%;
+    z-index: 1;
+    padding-top: 30px;
+    justify-content: left;
+}
+
+@media (max-width: 1080px) {
+    .resultRows {
+        width: 95%;
+    }
+}

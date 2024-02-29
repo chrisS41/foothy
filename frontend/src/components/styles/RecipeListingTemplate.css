@@ -1,0 +1,145 @@
+.recipeCard {
+    size: 500px 700px;
+    border-radius: 15px;
+    padding:5px;
+    margin:10px;
+    max-width: 33%;
+    min-width: 20%;
+    flex: 1 0 21%;  /*Goal of 4 items per row on regular screens (PCs/Tablets/etc.)*/  
+}
+
+.recipeImage:hover{
+  filter:brightness(70%);
+}
+
+.recipeLink {
+  transition-duration: 0.4s;
+  color: #3d573a;
+}
+
+.recipeLink:hover{
+  color: #86cd60; 
+}
+
+.recipeTitle {
+  font-size: large;
+  margin: auto;
+}
+
+.recipeImage {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    margin-bottom: 5px;
+    border-radius:7px;
+    transition-duration: 0.4s;
+}
+
+/*Mobile Phone Formatting*/
+@media (max-width: 1080px) {
+  .recipeCard {
+    flex-basis: 50%;
+    max-width: 100%;
+  }
+
+  .recipeTitle{
+    font-size: large;
+  }
+
+  .recipeImage{
+    height: 200px;
+  }
+
+  .healthRatingHeader{
+    font-size: small;
+  }
+}
+
+
+/*1080p PC screen formatting*/
+@media only screen and (max-width: 1920px) {
+  
+
+  .recipeTitle {
+    font-size: large;
+  }
+}
+
+/*The actual text that says "Tags: " */
+.tagText {
+  float: left;
+  margin-top: 5px;
+  margin-right: 3px;
+  margin-bottom: 23px;
+  color: black;
+}
+
+.tagList {
+  width: 100%;
+  object-fit: contain;
+}
+
+.singleTag {
+  border-radius: 7px;
+  font-size: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color: #457b55; 
+  color: black;
+  transition-duration: 0.2s;
+  border: none;
+}
+
+
+
+.singleTag:hover{
+  background-color: #86cd60; 
+}
+
+.singleTagText {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+.favoriteBlock {
+position: absolute;
+display: inline-block;
+width: 5%;
+margin-left:-50px;
+margin-top: 10px;
+}
+
+.favoriteButton{
+  float: right;
+}
+
+span.emoji{
+  font-size: x-large;
+  display: inline;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.healthRatingHeader {
+  margin: auto;
+  margin-top: -5px;
+  float: left;
+  margin-bottom: none;
+  color: #3d573a;
+  font-size: 15px;
+}
+
+.ratingLinkButton {
+  border:none;
+  background-color: white;
+  color:#3d863a;
+  transition-duration: 0.2s;
+}
+
+.ratingLinkButton:hover {
+  color: #3d573a;
+}

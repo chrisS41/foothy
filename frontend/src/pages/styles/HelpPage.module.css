@@ -1,0 +1,20 @@
+.headerText {
+  color: #3d863a;
+}
+
+.subHeaderText {
+  color:#3d573a;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.categoryHeaderText {
+  font-size: 20px; 
+  text-align: left;
+  color: #457b55;
+}
+
+.helpPage{
+  padding: 2rem;
+}

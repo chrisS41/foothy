@@ -1,0 +1,46 @@
+.filled-button, .secondary-button {
+  height: 40px;
+  width: 100%;
+  border-radius: 100px;
+  font-size: 10pt;
+  border: none;
+}
+
+.secondary-button {
+  background-color: #E9E9E9;
+  color: #3d863a;
+  transition: all .2s ease-in;
+  border: 1px solid #3d863a;
+}
+
+.filled-button {
+  background-color: #3d863a;
+  color: #ffffff;
+  transition: all .2s ease-in;
+}
+
+.filled-button:hover {
+  background-color: #3d573a;
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 15px rgba(138, 138, 138, 0.3);
+}
+
+.secondary-button:hover {
+  color: #3d573a;
+  border: 1px solid #3d573a;
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 15px rgba(138, 138, 138, 0.3);
+}
+
+.disabled-button {
+  pointer-events: none;
+  background-color: #b5b5b5;
+}
+
+.add-recipe-button-container {
+  width: 150px;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  margin: 1rem;
+}

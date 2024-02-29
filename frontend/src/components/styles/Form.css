@@ -1,0 +1,78 @@
+.flex-row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  flex: 1;
+}
+
+.flex-column {
+  flex: 1;
+  display: flex;
+}
+
+.flex-column .sub-header {
+  color: #3d573a;
+  font-size: 18px;
+}
+
+/* --- account form styling below. If it gets too big, I'll move it to a separate file --- */
+
+.user-account-form-container {
+  width: 100%;
+}
+.user-account-form-container .header {
+  display: flex;
+}
+.user-account-form, .recipe-form {
+  width: 100%;
+}
+
+.user-account-form .user-account-text {
+  padding: 1rem;
+  font-size: 10pt; 
+  box-sizing: border-box;
+}
+
+.user-account-form .user-account-link {
+  border: none;
+  background: transparent;
+  padding-top: 5px;
+  display: inline;
+  transition: all 0.2s ease-in-out;
+  font: inherit;
+  padding-left: 3px;
+  color: #3d863a;
+}
+
+.recipe-comment-form {
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.button-container-small {
+  padding-top: 1rem;
+  width: 100px;
+  margin: auto;
+}
+
+.button-container-full {
+  padding-top: 1rem;
+  margin: auto;
+}
+
+.user-account-link:hover {
+  color: #3d573a;
+}
+
+.show-password {
+  font-size: 10pt;
+  text-align: left;
+  margin-left: 10px;
+}
+
+/* @media only screen and (max-width: 600px) {
+  .flex-row {
+    display: block;
+  }
+} */

@@ -1,0 +1,40 @@
+.community {
+    padding: 2rem;
+    align-content: center;
+}
+
+
+.categoryTabs {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+
+.categoryTabs button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: x-large;
+}
+
+.categoryTabs button:hover {
+    background-color: darkgray;
+}
+
+.categoryTabs button:active {
+    background-color: black;
+}
+
+.tabContent {
+    display: none;
+    padding: 12px;
+}
+
+.defaultTab {
+    display: block;
+    padding: 12px;
+}
+

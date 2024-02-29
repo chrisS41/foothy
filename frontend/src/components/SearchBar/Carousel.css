@@ -1,0 +1,62 @@
+button.rec-dot{
+    background-color: #ffff;
+    box-shadow: 0 0 1px 3px rgb(172, 160, 160);
+  }
+
+
+
+  button.rec-dot:hover:enabled, button.rec-dot_active, button.rec-dot:focus:enabled{
+    background-color:  #063d28;
+    box-shadow: 0 0 1px 3px #095c3c;
+
+  }
+
+  /* square buttons */
+  .rec.rec-arrow {
+   background-color: #ffff;
+  }
+  /* round buttons on hover */
+  .rec.rec-arrow:hover:enabled,.rec.rec-arrow:focus:enabled {
+    border-radius: 50%;
+    background-color: #063d28;
+  }
+  /* hide disabled buttons */
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
+  img{
+    box-sizing: border-box;
+     height: 100%;
+     width: 300px;
+  }
+  .rec .rec-pagination{
+    margin-top: 11px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* For phone: */
+    img {
+             width: 186px;
+        }
+    .rec.rec-arrow {
+      background-color: #ffff;
+      height: 33px;
+      min-width: 25px;
+      line-height: 25px;
+      font-size: 1.0em;
+  }
+  button.rec-dot {
+    height: 7px;
+    width: 7px;
+  }
+  .rec .rec-pagination{
+    margin-top: 7px;
+  }
+  }
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    /* For tablets: */
+    img {
+        width: 235px;
+    }
+  }
+  

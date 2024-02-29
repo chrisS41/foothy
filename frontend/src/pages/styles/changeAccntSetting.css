@@ -1,0 +1,119 @@
+
+.accnt-form{
+    margin: 2% 10% 100px 10%;
+    padding-bottom: 20px;
+    justify-content: left;
+    text-align: left;
+    border: 1px solid #3D573A;
+    border-radius: 3px;
+}
+.accnt-form h1{
+    margin: 25px 0 50px 30px;
+    color: #3D573A;
+
+}
+
+.accnt-pic {
+    position: block;
+    width: 150px;
+    height: 150px;
+    width: 150px;
+    margin: 20px auto 50px auto;
+    border-radius: 50%;
+    background-image: url('../img/LogoNoText.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #E5FF7F;
+}
+
+.accnt-pic input{
+    display: none;
+}
+
+.imageExist{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* background-image: url('../img/LogoNoText.png');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; */
+    /* background-color: #E5FF7F; */
+    z-index: 50;
+    cursor: pointer;
+}
+
+.changeImage{
+    height: 150px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-image: none;
+    background-color: black;
+    z-index: 200;
+}
+
+.accnt-pic img{
+    position: flex;
+    max-width: 150px;
+    width: auto;
+    height: 150px;
+    border-radius:50%;
+    /* background-color: lightgrey; */
+}
+
+.accnt-pic img :active{
+    background-color: black;
+}
+
+.accnt-form form{
+    justify-content: center;
+    text-align: center;
+}
+.accnt-row{
+    margin: auto;
+    width: 60%;
+    display: block;
+}
+.accnt-column label{
+    text-align: right;
+    margin: 10px 0 5px 0;
+    float: left;
+    font-weight: bold;
+    color: #3D573A;
+    display: block;
+}
+
+.accnt-column span{
+    display: block;
+}
+
+.text-box{
+    display: block;
+    margin: 0 0 30px 150px;
+    text-align: left;
+    /* background-color: blue; */
+    border: 1px solid;
+    border-block-color: #3D863A;
+    border-radius: 3px;
+    padding: 12px 0 12px 10px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.save-container{
+    padding-top: 1rem;
+    width: 150px;
+    margin: auto;
+}
+.save-container button:disabled{
+    background-color: lightgrey;
+}
+.save-container button:enabled{
+    background-color: lightgrey;
+}
+.save-container button:hover{
+    background-color: #095C3C;
+    color: white;
+}

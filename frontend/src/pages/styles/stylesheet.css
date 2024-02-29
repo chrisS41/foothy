@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    background: white;
+    color: black;
+    font-family: Arial;
+}
+
+header{
+    position: sticky;
+    height: 80px;
+    background: orange;
+    color: black;
+    top: 0;
+    
+    z-index: 50;
+}
+
+#logoDisplayHeader{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    top: -75px;
+    z-index: 52;
+}
+
+#accLogoDisplay{
+    position: relative;
+    display: inline-block;
+    top: 20px;
+    left: 94%;
+    width: 100%;
+    z-index: 52;
+}
+
+#menuToggle{
+    position: relative;
+    display: inline-block;
+    top: -15px;
+    left: 35px;
+
+    z-index: 51;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a{
+    text-decoration: none;
+    color: black;
+
+    transition: color .5s ease;
+}
+
+#menuToggle a:hover{
+    color: green;
+}
+
+#menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity:0;
+    z-index: 52;
+
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: brown;
+    border-radius: 3px;
+
+    z-index: 51;
+    
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: brown;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2){
+    transform: rotate(-45deg) translate(0, -1px)
+}
+
+#menu{
+    position: absolute;
+    width: 130px;
+    height: 100vh;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: #F9BB0A;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li{
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+#menuToggle input:checked ~ ul{
+    transform: none;
+}
+
+#logoDisplay{
+    position: relative;
+    display: block;
+    text-align: center;
+    top: 50px;
+}
+
+form.searchBox{
+    position: relative;
+    display: block;
+    top: 80px;
+}
+
+form.searchBox input[type=text]{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: white;
+    margin: auto;
+}
+
+form.searchBox button{
+    float: left;
+    width: 20;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.searchBox button:hover{
+    background: rgb(22, 101, 165);
+}
+
+/* Clear Floats */
+form.searchBox::after{
+    content:"";
+    clear: both;
+    display: table;
+}

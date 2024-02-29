@@ -1,0 +1,65 @@
+/* For reusable text input and text area inputs.  */
+
+.input-container {
+  margin: 5px 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  height: 40px; 
+  padding-left: 10px;
+  border: 1px solid #3d863a;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+.input-field:focus {
+  outline-color: #3d573a;
+}
+
+.form-textarea {
+  width: 100%;
+  height: 150px;
+  overflow: auto;
+  font: inherit;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #3d863a;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+.form-textarea:focus {
+  outline-color: #3d573a;
+}
+
+.error {
+  border: 1px solid #d30000;
+}
+
+.error-message {
+  text-align: left;
+  color: #d30000;
+  font-size: 12px;
+}
+
+.input-label {
+  font-size: 13px; 
+  color: #667e7c;
+  position: relative;
+  left: 14px;
+  top: 29px;
+  transition: all .2s ease-in-out;
+  z-index: -1;
+}
+
+.input-label.focused {
+  font-size: 12px; 
+  color: #3d573a;
+  left: 0px;
+  top: 0px;
+}

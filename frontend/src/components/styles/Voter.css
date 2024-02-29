@@ -1,0 +1,43 @@
+.activeUpArrow {
+
+  border: solid #063D28;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+
+}
+
+.unactiveUpArrow {
+
+  border: solid #34252f;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  
+}
+
+.activeDownArrow {
+
+  border: solid #063D28;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+}
+
+.unactiveDownArrow {
+
+  border: solid #34252f;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+}

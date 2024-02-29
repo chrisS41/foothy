@@ -1,0 +1,86 @@
+.singleComment{
+    box-sizing: border-box;
+    margin:auto;
+    width: 40%;
+    height: 25%;
+    border: solid black 1px;
+    margin-bottom: 1%;
+}
+
+.circularContainer{
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    max-width: 250px;
+    max-width: 250px;
+    justify-content: center;
+    margin: 10px;
+    margin-left: 5%;
+}
+
+.circularContainer img{
+    box-sizing: border-box;
+    height: 100%;
+    align-self: center;
+}
+
+.userInfo{
+    display: flex;
+
+}
+
+.userName{
+    width: auto;
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    align-self:center;
+    margin-left: 1%;
+}
+.date{
+    width: auto;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 8%;
+}
+
+.commentText{
+    width: 80%;
+    clear: both;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #e2f39e;
+    border-radius: 5px;
+    
+}
+
+
+/*@media only screen and (max-width: 600px) {
+    /* For phone: 
+    img {
+        width: 186px;
+    }
+  }
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    /* For tablets: 
+    img {
+        width: 235px;
+    }
+  }*/
+
+@media (max-width:768px){
+    .singleComment{
+        width: 80%;
+    }
+
+    .circularContainer{
+        width: 75px;
+        height: 75px;
+    }
+}
+  
