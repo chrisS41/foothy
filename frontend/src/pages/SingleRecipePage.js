@@ -53,7 +53,7 @@ const SingleRecipePage = ({ match }) => {
       }
 
       try {
-        await axios.post("https://currserver.herokuapp.com/getComments", 
+        await axios.post("config.BE.Addr/getComments", 
         JSON.stringify({recipeID: match.params.id}), 
         {
           mode: "cors", 
@@ -124,7 +124,7 @@ const SingleRecipePage = ({ match }) => {
           window.location.reload();
         }
         try {
-          await axios.post(`https://currserver.herokuapp.com${match.url}`, 
+          await axios.post(`config.BE.Addr${match.url}`, 
           query, 
           {
             mode: "cors", 
@@ -193,7 +193,7 @@ const SingleRecipePage = ({ match }) => {
     /*try {
       let result = await fetch(match.url, query)
       return result.json()
-      await axios.post(`https://currserver.herokuapp.com${match.url}`, 
+      await axios.post(`config.BE.Addr${match.url}`, 
       JSON.stringify({}))
     } catch (e) {
       console.log(e)

@@ -17,13 +17,13 @@ export const RecipePopup = ({ onClose }) => {
 
   const connToBE= () => {
     //This is async I believe
-    axios.post("https://currserver.herokuapp.com/xhr", 
+    axios.post("config.BE.Addr/xhr", 
     JSON.stringify(data["info"]), 
     {headers: { 'Content-Type': 'application/json' }}
     ).then(res=>{
       //document.getElementById("imgDis").innerHTML = "";
       if(res.data == "finish") {
-        axios.post("https://currserver.herokuapp.com/xhr", 
+        axios.post("config.BE.Addr/xhr", 
         JSON.stringify(data["imgs"]),
         {headers: {'Content-Type': "application/json"}}
         ).then(res=>{

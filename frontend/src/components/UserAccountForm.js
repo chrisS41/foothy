@@ -4,9 +4,10 @@ import { Button } from './Button';
 import { Redirect, Route } from "react-router";
 import * as validators from './ValidatorUtil';
 import './styles/Form.css';
-import { resolveContent } from 'nodemailer/lib/shared';
+// import { resolveContent } from 'nodemailer/lib/shared';
 import axios from 'axios'
 import { BiWindows } from 'react-icons/bi';
+import config from "./../config/config.json"
 
 // --- login form dummy component --- // 
 // TODO: separate loginForm and registrationForm into separate files??
@@ -75,7 +76,7 @@ const LoginForm = ({ label, link, onSignIn }) => {
   // when login clicked
   let loginButtonClick = async () => {
     try {
-      await axios.post('https://currserver.herokuapp.com/login',
+      await axios.post(config.BE.Addr + '/user/login',
         JSON.stringify({ 
           username: values.username, // pass values
           password: values.password 
@@ -334,7 +335,7 @@ const RegistrationForm = (props) => {
   let duplicatecheck = async (val, nameOrEmail) => {
     let result;
     try {
-      await axios.post('https://currserver.herokuapp.com/usernameEmailcheck',
+      await axios.post(config.BE.Addr + '/user/dupChecker',
         JSON.stringify({
           value: val,
           nameOrEmail: nameOrEmail
@@ -356,7 +357,7 @@ const RegistrationForm = (props) => {
   // sign up button click
   let signupButtonClick = async () => {
     try {
-      await axios.post('https://currserver.herokuapp.com/signup',
+      await axios.post(config.BE.Addr + '/user/signup',
         JSON.stringify({
           username: values.username,
           password: values.password,

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.24.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.3",
@@ -21,6 +22,7 @@
     "react-spinners": "^0.10.6",
     "socket.io-client": "^4.0.1",
     "styled-components": "^5.2.3",
+    "typescript": "^3.9.10",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
@@ -46,5 +48,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "react": "^16.14.0"
   }
 }

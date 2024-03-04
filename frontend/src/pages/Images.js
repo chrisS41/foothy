@@ -89,7 +89,7 @@ class Images extends Component {
 
         console.log(data);
 
-        axios.post("https://currserver.herokuapp.com/xhr", 
+        axios.post("config.BE.Addr/xhr", 
         JSON.stringify(data), 
         {headers: { 'Content-Type': 'application/json' }}
         ).then(res=>{

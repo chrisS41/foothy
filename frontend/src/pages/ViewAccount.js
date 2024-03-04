@@ -4,6 +4,7 @@ import RecipeListingTemplate from '../components/RecipeListingTemplate'
 import ProfileHeader from '../components/ProfileHeader'
 import defaultRecipe from './img/lukas-blazek-f-TWhXOrLiU-unsplash.jpg'
 import axios from 'axios';
+import config from "./../config/config.json"
 
 class ViewAccount extends Component {
 
@@ -20,7 +21,7 @@ class ViewAccount extends Component {
 
     componentDidMount = async() => {
         try {
-            await axios.post('https://currserver.herokuapp.com/loadAccountSetting', 
+            await axios.post(config.BE.Addr + '/user/get', 
             JSON.stringify({"username": window.sessionStorage.getItem("username")}), 
             {
                 mode: "cors",
@@ -49,7 +50,7 @@ class ViewAccount extends Component {
                 })
 
 
-            await axios.post('https://currserver.herokuapp.com/getMyRecipes', 
+            await axios.post(config.BE.Addr + '/getMyRecipes', 
             JSON.stringify({"username": window.sessionStorage.getItem("username")}), 
             {
                 mode: "cors",

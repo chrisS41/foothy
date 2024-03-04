@@ -2,6 +2,7 @@ import React from 'react'
 import './styles/Voter.css';
 import io from "socket.io-client";
 import axios from 'axios';
+import config from "./../config/config.json"
 
 //const socket = io();
 
@@ -52,7 +53,7 @@ class Vote extends React.Component {
 
     async getVotes(){
         try {
-            await axios.post('https://currserver.herokuapp.com/voteCheck',
+            await axios.post(config.BE.Addr + '/voteCheck',
                 JSON.stringify({
                     recipeID: this.state.recipeID
                 }), {

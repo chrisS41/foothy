@@ -45,7 +45,7 @@ function HomePage() {
     }
 
     const addAxios = () => {
-      axios.post("https://currserver.herokuapp.com/testing", 
+      axios.post("config.BE.Addr/testing", 
       JSON.stringify({"boobs": "ass"}), 
       {headers: { 'Content-Type': 'application/json' }}
       ).then(res=>{

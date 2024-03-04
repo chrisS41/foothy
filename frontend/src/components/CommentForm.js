@@ -4,6 +4,7 @@ import { getTrimmedValue } from './ValidatorUtil';
 import { Textfield, Textarea } from './Input';
 import { Button } from './Button';
 import axios from 'axios';
+import config from "./../config/config.json"
 
 export const CommentForm = props => { 
   const [values, setValues] = useState({ name: ''});
@@ -52,7 +53,7 @@ export const CommentForm = props => {
           comment: values.comment
         })
       })*/
-      await axios.post('https://currserver.herokuapp.com/submitComment', 
+      await axios.post(config.BE.Addr + '/submitComment', 
             JSON.stringify({ 
                 username: window.sessionStorage.getItem('username'), // pass values
                 recipeID: props.id,

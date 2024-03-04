@@ -3,6 +3,7 @@ import './styles/LikeButton.css';
 import { FaHeart, FaThinkPeaks } from "react-icons/fa"
 import axios from 'axios';
 // import * as FaIcons from 'react-icons/fa';
+import config from "./../config/config.json"
 
 class LikeButton extends React.Component {
 
@@ -29,7 +30,7 @@ class LikeButton extends React.Component {
       }
       else {
         //console.log(this.state.recipeID);
-        await axios.post('https://currserver.herokuapp.com/likeCheck',
+        await axios.post(config.BE.Addr + '/likeCheck',
           JSON.stringify({
             recipeID: this.state.recipeID,
             username: window.sessionStorage.getItem('username')
@@ -98,7 +99,7 @@ class LikeButton extends React.Component {
         alert("login first to like the post");
       }
       else {
-      await axios.post('https://currserver.herokuapp.com/likeButtonClick',
+      await axios.post(config.BE.Addr + '/likeButtonClick',
                 JSON.stringify({
                     username: window.sessionStorage.getItem('username'),
                     recipeID: this.state.recipeID

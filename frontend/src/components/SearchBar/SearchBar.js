@@ -18,6 +18,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 //import improvedFunctions from '../../../../sandbox/improvedFunctions';
 // import { query } from 'express';
+import config from "./../../config/config.json"
 
 const override = css`
   display: block;
@@ -252,7 +253,7 @@ class SearchBar extends Component {
         // }
         console.log('front end get pop ')
         try {
-           await axios.get('https://currserver.herokuapp.com/getPopular', null,
+           await axios.get(config.BE.Addr + '/getPopular', null,
            {
                mode: "cors",
                headers: { 'Content-Type': 'application/json' }
@@ -287,8 +288,8 @@ class SearchBar extends Component {
         try {
             console.log('auto complete here!!!')
             delete query.url
-            await axios.post('https://currserver.herokuapp.com/autocomplete', query)
-            await axios.get('https://currserver.herokuapp.com/autocomplete')
+            await axios.post(config.BE.Addr + '/autocomplete', query)
+            await axios.get(config.BE.Addr + '/autocomplete')
                 .then(autoWords => {
                     console.log('autowords', autoWords.data)
                     this.setState({ display: true, suggestions: autoWords.data }, () => {
@@ -372,15 +373,15 @@ class SearchBar extends Component {
 
         // Pass request and get result, update recipes and redirect
         try {
-            // query.url = 'https://currserver.herokuapp.com/recipes'
+            // query.url = config.BE.Addr + '/recipes'
             console.log('it gets here')
             query.data = JSON.stringify(query)
             query.mode = "cors"
             delete query.body
             console.log('sending this query: ', query)
-            let result = await axios('https://currserver.herokuapp.com/recipes', query)
+            let result = await axios(config.BE.Addr + '/recipes', query)
             console.log(result)
-            axios.get('https://currserver.herokuapp.com/recipes', null, {
+            axios.get(config.BE.Addr + '/recipes', null, {
                 headers: {'Content-Type': 'application/json'},
                 mode: "cors"
             } )

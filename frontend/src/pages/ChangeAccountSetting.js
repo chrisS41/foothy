@@ -7,6 +7,7 @@ import './styles/changeAccntSetting.css'
 import profilePic from './img/LogoNoText.png'
 import addPic from './img/plus.png'
 import axios from 'axios';
+import config from "./../config/config.json"
 
 const UserSettingForm = (props) => {
     const [values, setValues] = useState({});
@@ -132,7 +133,7 @@ const UserSettingForm = (props) => {
     useEffect(async () => {
         try {
             //await fetch('/loadAccountSetting')
-            await axios.post('https://currserver.herokuapp.com/loadAccountSetting',
+            await axios.post(config.BE.Addr + '/user/get',
                 JSON.stringify({
                     username: window.sessionStorage.getItem('username')
                 }), {
@@ -175,7 +176,7 @@ const UserSettingForm = (props) => {
                     password: val
                 })
             })*/
-            await axios.post('https://currserver.herokuapp.com/passwordcheck', 
+            await axios.post(config.BE.Addr + '/user/login', 
             JSON.stringify({ 
                 username: window.sessionStorage.getItem('username'), // pass values
                 password: val
@@ -207,7 +208,7 @@ const UserSettingForm = (props) => {
                     newPassword : values.newPassword
                 })
             })*/
-            await axios.post('https://currserver.herokuapp.com/changeAccountSetting', 
+            await axios.post(config.BE.Addr + '/user/passwd', 
             JSON.stringify({ 
                 username: window.sessionStorage.getItem('username'), // pass values
                 currentPassword: values.currentPassword,

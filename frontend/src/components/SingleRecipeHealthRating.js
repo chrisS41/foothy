@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './styles/SingleRecipeHealthRating.css'
 import { Link } from 'react-router-dom';
-import { BsQuestionCircleFill } from 'react-icons/all';
+import { BsQuestionCircleFill } from 'react-icons/bs';
 
 import rating1 from '../pages/img/Avocado1.png'
 import rating2 from '../pages/img/Avocado2.png'

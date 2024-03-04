@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import LikeButton from "./LikeButton.js"
-import { BsQuestionCircleFill } from 'react-icons/all';
+import { BsQuestionCircleFill } from 'react-icons/bs';
 
 import './styles/RecipeListingTemplate.css'
-
 
 class RecipeListingTemplate extends Component {
 
@@ -63,7 +62,7 @@ class RecipeListingTemplate extends Component {
 
             <div className="card"> <Link className="recipeLink" to={{pathname: (!this.state.usId) ? `/result/${this.state.id}` : `/userResult/${this.state.id}`,
             state: {healthRating: this.state.healthRating, data: this.state.data}}}>
-                <img className="recipeImage" src={(this.state.user !== null && this.state.user !== undefined) ? `https://currserver.herokuapp.com/${this.state.user}/${this.state.image}` : this.state.image} alt="recipe_image" />
+                <img className="recipeImage" src={(this.state.user !== null && this.state.user !== undefined) ? `config.BE.Addr/${this.state.user}/${this.state.image}` : this.state.image} alt="recipe_image" />
                 <div className="favoriteBlock">
                     <LikeButton className="favoriteButton" id={this.state.id} style={{
                         height: '40px',

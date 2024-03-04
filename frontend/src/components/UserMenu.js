@@ -17,7 +17,7 @@ function UserMenu() {
             window.sessionStorage.setItem('firstName', "Guest");
             window.location.replace("/");
             /*
-            await axios.post('https://currserver.herokuapp.com/logout', {
+            await axios.post(config.BE.Addr + '/logout', {
                 mode: "cors"
             })
                 .then(res => {

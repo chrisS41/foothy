@@ -5,13 +5,12 @@ import { Link, useLocation, useHistory } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './styles/Navbar.css';
 import { IconContext } from 'react-icons'
-import { FaSignInAlt, FaSignOutAlt } from 'react-icons/all';
+import { FaSignInAlt, FaSignOutAlt } from 'react-icons/fa';
 import { UserAccountPopup } from './UserAccountPopup';
 import { WelcomePopup } from './WelcomePopup';
 import UserMenu from './UserMenu';
 import HeaderLogo from '../pages/img/LogoNoText.png';
 import { Blocker } from './Blocker';
-
 
 function Navbar() {
     var loc = useLocation()

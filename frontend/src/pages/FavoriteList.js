@@ -4,6 +4,7 @@ import RecipeListingTemplate from '../components/RecipeListingTemplate.js'
 import defaultRecipe from './img/lukas-blazek-f-TWhXOrLiU-unsplash.jpg'
 import axios from "axios";
 import { BiWindows } from 'react-icons/bi';
+import config from "./../config/config.json"
 
 // axios.defaults.withCredentials = true;
 
@@ -19,7 +20,7 @@ class FavoriteList extends Component {
     try {
       //await fetch('/favoriteList')
 
-      await axios.post('https://currserver.herokuapp.com/favoriteList', 
+      await axios.post(config.BE.Addr + '/favoriteList', 
       JSON.stringify({
         username: window.sessionStorage.getItem('username')
       }), {

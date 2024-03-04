@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './styles/SingleRecipeContent.css'
 import ClipLoader from "react-spinners/BeatLoader";
 import * as ShareButtons from '../components/ShareRecipeButtons';
-import { FaExclamationTriangle } from 'react-icons/all';
+import { FaExclamationTriangle } from 'react-icons/fa';
 import SingleRecipeHealthRating from './SingleRecipeHealthRating';
 import { ReportPostPopup } from './ReportPostPopup';
 import LikeButton from '../components/LikeButton';

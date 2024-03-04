@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 
 import './styles/FilterMenu.css'
-import {BiSliderAlt, RiHomeSmile2Fill, TiShoppingBag} from 'react-icons/all'
-
+import {BiSliderAlt} from 'react-icons/bi'
 
 class FilterMenu extends Component {
 
